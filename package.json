@@ -1,17 +1,25 @@
 {
   "name": "vue-scramble-text",
-  "version": "0.1.0",
-  "private": true,
+  "version": "0.1.4",
+  "private": false,
   "scripts": {
-    "serve": "vue-cli-service serve",
+    "serve": "vue-cli-service serve --port=3000",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "lib": "vue-cli-service build --target lib --name vue-scramble-text ./src/components/VueScrambleText.vue"
+  },
+  "main": "dist/vue-scramble-text.umd.js",
+  "unpkg": "dist/vue-scramble-text.min.js",
+  "types": "dist/index.d.ts",
+  "browser": {
+    "./sfc": "src/components/VueScrambleText.vue"
   },
   "dependencies": {
     "core-js": "^2.6.5",
     "vue": "^2.6.10",
     "vue-class-component": "^7.0.2",
-    "vue-property-decorator": "^8.1.0"
+    "vue-property-decorator": "^8.1.0",
+    "vue-scramble-text": "^0.1.0"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.11.0",

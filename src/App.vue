@@ -1,17 +1,15 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App" />
+    <vue-scramble-text :text="'I love Vue.js & typescript ♡♡♡♡'" />
   </div>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
-import HelloWorld from "./components/HelloWorld.vue";
-
+import VueScrambleText from "./components/VueScrambleText.vue";
 @Component({
   components: {
-    HelloWorld
+    VueScrambleText
   }
 })
 export default class App extends Vue {}
